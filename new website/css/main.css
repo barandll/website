@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)) ,url("../images/shopping\ bags.jpg");
+    height: 750px;
+    background-size: cover;
+    text-align: left;
+}
+
+.header-title-1{
+    
+    font-size: 45px;
+    font-family: 'Roboto';
+    margin-top: 150px;
+    margin-left: 50px;
+    letter-spacing: 2px;
+
+}
+
+.header-vm-1{
+    color: white;
+    background-color: transparent;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-left: 45px;
+    border: solid rgb(192, 192, 192) 2px;
+    border-radius: 25px;
+    font-family: 'Open Sans';
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+h2{
+    color: white;
+    font-size: 2em;
+}
+
+p{
+    color:white;
+    margin-top: 90px;
+    margin-left: 50px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    margin-bottom: 70px;
+    
+}
+
+.logo{
+    color: white;
+    font-family: 'Open Sans';
+}
+
+.logo span.dark-blue{
+    color: #021849;    
+}
+
+.logo span.green{
+    color: #92C63E;
+}
+
+.nav-menu{
+    list-style: none;  
+}
+  
+.nav-menu li{
+      display: inline-block;
+      color: #45413e;
+      font-size: 1.25em;
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-right: 20px;
+      font-family: 'Open Sans';
+      transition: all 0.3s ease-in-out;  
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+.nav-menu li a{
+
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #45413e;
+
+}
+
+/************************** popular section ****************************/
+
+.popular-items{
+    background-color:#011418;
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+}
+
+.popular-row{
+    display: flex;
+    justify-content: center;
+
+}
+
+.popular-col{
+    width: 350px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.popular-image-1,
+.popular-image-2,
+.popular-image-3,
+.popular-image-4{
+    width: 100%;
+    height: 197px;
+    background-repeat: no-repeat ;
+    position: relative;
+    
+}
+
+.popular-image-1{
+    background-image: url(../images/product1.JPG);
+}
+
+.popular-image-1:hover .popular-overlay{
+    
+    opacity: 1;
+
+}
+
+.popular-image-2{
+    background-image: url(../images/product2.JPG);
+}
+
+.popular-image-2:hover .popular-overlay{
+    
+    opacity: 1;
+
+}
+
+.popular-image-3{
+    background-image: url(../images/product3.JPG);
+}
+
+.popular-image-3:hover .popular-overlay{
+    
+    opacity: 1;
+
+}
+
+.popular-image-4{
+    background-image: url(../images/product4.JPG);
+}
+
+.popular-image-4:hover .popular-overlay{
+    
+    opacity: 1;
+
+}
+
+.popular-h3{
+    background: white;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-family: 'Open Sans';
+}
+
+.popular-h2{
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.popular-middle{
+    text-align: center;
+   
+}
+
+.popular-overlay{
+    opacity: 0;
+    position: absolute;
+    background-color:rgba(133, 188, 35,0.7) ;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.overlay-icons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-icons a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    background: white;
+    margin: 0px 15px;
+    border: solid white 2px;
+    padding: 10px 10px;
+    border-radius: 25px;
+}
+
+
+

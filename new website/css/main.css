@@ -89,8 +89,6 @@ nav{
 .nav-menu li a{
 
     text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
     color: #45413e;
 
 }
@@ -129,6 +127,7 @@ nav{
 
 .popular-image-1{
     background-image: url(../images/product1.JPG);
+    background-size: cover;
 }
 
 .popular-image-1:hover .popular-overlay{
@@ -139,6 +138,7 @@ nav{
 
 .popular-image-2{
     background-image: url(../images/product2.JPG);
+    background-size: cover;
 }
 
 .popular-image-2:hover .popular-overlay{
@@ -149,6 +149,8 @@ nav{
 
 .popular-image-3{
     background-image: url(../images/product3.JPG);
+    background-size: cover;
+
 }
 
 .popular-image-3:hover .popular-overlay{
@@ -159,6 +161,7 @@ nav{
 
 .popular-image-4{
     background-image: url(../images/product4.JPG);
+    background-size: cover;
 }
 
 .popular-image-4:hover .popular-overlay{
@@ -169,9 +172,17 @@ nav{
 
 .popular-h3{
     background: white;
-    padding: 10px 20px;
-    font-size: 13px;
+    padding: 10px ;
+    font-size: 15px;
     font-family: 'Open Sans';
+    
+}
+
+.popular-h3 a{
+
+    text-decoration: none;
+    color: black;
+    
 }
 
 .popular-h2{
@@ -196,6 +207,34 @@ nav{
     
 }
 
+.popular-bottom{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    
+    padding-bottom: 50px;
+}
+
+.popular-bottom a{
+
+    color: white;
+    background-color: transparent;
+    padding: 10px 45px;
+    text-decoration: none;
+    margin-left: 45px;
+    border: solid rgb(192, 192, 192) 2px;
+    border-radius: 25px;
+    font-family: 'Open Sans';
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.popular-bottom i{
+
+    padding-left: 20px;
+
+}
+
 .overlay-icons{
     width: 100%;
     height: 100%;
@@ -215,5 +254,139 @@ nav{
     border-radius: 25px;
 }
 
+/******************************************* banner ************************************/
 
+.banner{
+    
+    width: 100%;
+    height: 750px;
+    background-repeat: no-repeat ;
+    position: relative;
+    background-image: url(../images/cliff-lake.jpg);
+    background-size: cover;
+    padding-bottom: 50px;
+
+}
+
+.banner h2{
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Roboto';
+    padding-top: 300px;
+    letter-spacing: 2px;
+    padding-bottom: 0px;
+
+}
+
+.banner p{
+
+    position: relative;
+    text-align: center;
+    color:white;
+    font-family: 'Open Sans';
+    margin: 0 0;
+    padding-top: 30px;
+    font-size: 15px;
+   
+}
+
+/*******************************Featured Products****************************************/
+
+.featured-items{
+    background-color:#011418;
+    padding-top: 40px;
+    padding-bottom: 100px;
+
+}
+
+.featured-top{
+    position: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.scroll .nav p{
+    font-size: 30px;
+}
+
+.scroll .nav a{
+    border: solid gray 2px;
+    background-color: gray;
+    padding: 0px 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.featured-row{
+    display: flex;
+    justify-content: center;
+
+}
+
+.featured-col{
+    width: 350px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.featured-image-1,
+.featured-image-2,
+.featured-image-3,
+.featured-image-4{
+    width: 100%;
+    height: 197px;
+    background-repeat: no-repeat ;
+    position: relative;
+    
+}
+
+.featured-image-1{
+    background-image: url(../images/featured-1.JPG);
+    background-size: cover;
+    
+}
+.featured-image-2{
+    background-image: url(../images/featured-2.JPG);
+    background-size: cover;
+    
+}
+.featured-image-3{
+    background-image: url(../images/featured-3.JPG);
+    background-size: cover;
+    
+}
+.featured-image-4{
+    background-image: url(../images/featured-4.JPG);
+    background-size: cover;
+    
+}
+
+.featured-h2{
+
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+
+}
+
+.featured-p{
+    text-align: center;
+    margin: 0;
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+.featured-h3{
+
+    background: white;
+    padding: 10px ;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    text-align: center;
+
+}
+
+/* ***************************************Up footer *********************************************/
 

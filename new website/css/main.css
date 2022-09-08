@@ -390,3 +390,109 @@ nav{
 
 /* ***************************************Up footer *********************************************/
 
+.upper-footer{
+    background-color: #4A3F3B;
+    height: 270px;
+   
+}
+.upper-row{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.upper-col{
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+}
+
+.upper-row-in-1,
+.upper-row-in-2,
+.upper-row-in-3{
+    display: flex;
+    justify-content: center;
+}
+
+.upper-col-in-1,
+.upper-col-in-2,
+.upper-col-in-3{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.up-h-1,
+.up-h-2,
+.up-h-3{
+    text-align: right;
+    display: inline;
+    font-family: 'Open Sans' ;
+    
+}
+
+.up-p-1,
+.up-p-2,
+.up-p-3{
+    text-align: left;
+    margin: 0px 0px;
+    color: gray;
+    padding-top: 10px;
+    font-family: 'Open Sans' ;
+
+}
+
+.up-1 i,
+.up-2 i,
+.up-3 i{
+   
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 5px;
+    padding-left: 10px;
+    font-size: 80px;
+    color: #92C63E;
+}
+
+/******************************************************** footer ***************************************************************/
+
+footer{
+   padding: 100px;
+   background-color: white;
+  
+}
+
+.footer-row{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-col{
+    margin: 30px 30px;
+    padding: 0px 70px;
+    font-family: 'Open Sans';
+}
+
+.footer-title{
+   font-family: 'Open Sans'; 
+   margin-bottom: 30px;
+}
+
+.footer-col a{
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-col p{
+    margin: 0px 0px;
+}
+
+.footer-col a.cat{
+  font-family: 'Open Sans'; 
+  
+
+}
+
+

@@ -53,6 +53,8 @@ p{
 .logo{
     color: white;
     font-family: 'Open Sans';
+    font-size: 25px;
+    padding-right: 20px;
 }
 
 .logo span.dark-blue{
@@ -64,7 +66,8 @@ p{
 }
 
 .nav-menu{
-    list-style: none;  
+    list-style: none;
+    
 }
   
 .nav-menu li{
@@ -92,6 +95,81 @@ nav{
     color: #45413e;
 
 }
+
+/*************************************dropdown*********************************************************/
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin-left: 80px;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Open Sans';
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color:  #45413e;
+    padding: 12px 0px;
+    background-color: inherit;
+    font: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #011418;
+    color: white;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: #011418;
+    height: 520px;
+  }
+
+
+  .column a {
+    float: none;
+    color: #45413e;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .column h3{
+    margin-left: 18px;
+  }
+
+  .column a:hover {
+    background-color: #ddd;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
 
 /************************** popular section ****************************/
 
@@ -463,6 +541,35 @@ footer{
   
 }
 
+.footer-row-h{
+    display: flex;
+   
+}
+
+.footer-col-h{
+    margin: 0px 30px;
+    padding: 0px 80px;
+    font-family: 'Open Sans';
+    display: flex;
+}
+
+h3.Con{
+
+}
+
+h3.Catg{
+    
+
+}
+
+h3.Abt{
+
+    padding-left: 110px;
+    
+}
+
+
+
 .footer-row{
     display: flex;
     justify-content: center;
@@ -473,6 +580,7 @@ footer{
     margin: 30px 30px;
     padding: 0px 70px;
     font-family: 'Open Sans';
+    display: flex;
 }
 
 .footer-title{
@@ -492,7 +600,50 @@ footer{
 .footer-col a.cat{
   font-family: 'Open Sans'; 
   
+}
 
+h3.footer-title{
+    display: flex;
+}
+
+a.c1{
+    margin-bottom: 10px;
+}
+
+ul li{
+    margin-bottom: 30px;
+    list-style: none;
+   
+}
+
+ul.left{
+  
+  justify-content: left;
+  margin-right: 30px;
+ 
+  
+}
+
+ul.middle{
+    justify-content: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    
+}
+
+ul.right{
+    margin-left: 30px;
+    
+}
+
+ul.socials{
+    display: flex;
+    margin-right: 10px;
+    
+}
+
+ul li i{
+    margin: 0px 10px;
 }
 
 

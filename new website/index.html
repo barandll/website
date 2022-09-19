@@ -9,12 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    
 </head>
 <body>
 
     <header>
         <nav>
             
+            <a href="index.html"><img src="icons/osf-icon.ico" alt=""></a>
             <h2 class="logo"><span class="dark-blue">OSF</span> <br> <span class="green">Academy</span></h2>
 
             <div class="dropdown">
@@ -91,80 +96,149 @@
             </ul>
         </nav>
 
-        <h2 class="header-title-1">Control and manage any <br>device with cloud solution</h2>
+       <!--  <h2 class="header-title-1">Control and manage any <br>device with cloud solution</h2>
         <p>Improve business performance and the user experience<br> with the right mix of loT technology and processes</p>
-        <a href="#" class="header-vm-1">VIEW MORE</a>
-    </header>
+        <a href="#" class="header-vm-1">VIEW MORE</a> -->
 
-    <!-------------------------------------- popular ıtems part ------------------------->
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left is-hidden">
+                <img src="images/left-arrow-svgrepo-com.svg" alt="">
+            </button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                      <img class="carousel__images" src="images/shopping bags.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__images" src="images/ModernWorking.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__images" src="images/nyc-lights.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">
+                <img src="images/right-arrow-svgrepo-com.svg" alt="">
+            </button>
 
-    <div class="popular-items">
-       
-        <div class="popular-top"></div>
-
-        <div class="popular-middle">
-            <h2 class="popular-h2">Popular Items</h2>
-            <div class="popular-row">
-                <div class="popular-col">
-                    <div class="popular-image-1">
-                        
-                        <div class="popular-overlay">
-                            <div class="overlay-icons">
-                                <a href=""><i class="fa-solid fa-plus"></i></a>
-                               <a href=""><i class="fa-solid fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="popular-h3">ItemName <br>$799 <a href="">buy now</a></h3>
-                    
-                </div>
-                <div class="popular-col">
-                    <div class="popular-image-2">
-                        <div class="popular-overlay">
-                            <div class="overlay-icons">
-                                <a href=""><i class="fa-solid fa-plus"></i></a>
-                               <a href=""><i class="fa-solid fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="popular-h3">ItemName <br>$399 <a href="">buy now</a></h3>
-                    
-                </div>
-                <div class="popular-col">
-                    <div class="popular-image-3">
-                        <div class="popular-overlay">
-                            <div class="overlay-icons">
-                                <a href=""><i class="fa-solid fa-plus"></i></a>
-                               <a href=""><i class="fa-solid fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="popular-h3">ItemName <br>$299 <a href="">buy now</a></h3>
-                    
-                </div>
-                <div class="popular-col">
-                    <div class="popular-image-4">
-                        <div class="popular-overlay">
-                            <div class="overlay-icons">
-                                <a href=""><i class="fa-solid fa-plus"></i></a>
-                               <a href=""><i class="fa-solid fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="popular-h3">ItemName <br>$99 <a href="">buy now</a></h3>
-
-                    
-                </div>
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
             </div>
         </div>
         
-        <div class="popular-bottom">
+    <!-------------------------------------- popular ıtems part ------------------------->
 
-            <a href="#" class="popular-lm-1">Load More <i class="fa-solid fa-rotate-right"></i></a>
-                    
+       
+
+    <div class="container">
+        
+        <h1 class="heading">Popular Items</h1>
+
+        <div class="box-container">
+         <div class="box">
+             <div class="image">
+                <img src="images/product1.JPG" alt="">
+             </div>
+             <div class="content">
+                <h3>title goes here</h3>
+                <h4>price</h4>
+                <a href="" class="btn">Buy Now</a>
+                
+             </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+               <img src="images/product2.JPG" alt="">
+            </div>
+            <div class="content">
+               <h3>title goes here</h3>
+               <h4>price</h4>
+               <a href="" class="btn">Buy Now</a>
+               
+            </div>
+           </div>
+
+           <div class="box">
+            <div class="image">
+               <img src="images/product3.JPG" alt="">
+            </div>
+            <div class="content">
+               <h3>title goes here</h3>
+               <h4>price</h4>
+               <a href="" class="btn">Buy Now</a>
+               
+            </div>
+         </div>
+
+         <div class="box">
+            <div class="image">
+               <img src="images/product4.JPG" alt="">
+            </div>
+            <div class="content">
+               <h3>title goes here</h3>
+               <h4>price</h4>
+               <a href="" class="btn">Buy Now</a>
+               
+            </div>
+         </div>
+
+         <div class="box">
+            <div class="image">
+               <img src="images/product1.JPG" alt="">
+            </div>
+            <div class="content">
+               <h3>title goes here</h3>
+               <h4>price</h4>
+               <a href="" class="btn">Buy Now</a>
+               
+            </div>
+         </div>
+
+         <div class="box">
+           <div class="image">
+              <img src="images/product2.JPG" alt="">
+           </div>
+           <div class="content">
+              <h3>title goes here</h3>
+              <h4>price</h4>
+              <a href="" class="btn">Buy Now</a>
+              
+           </div>
+          </div>
+
+          <div class="box">
+           <div class="image">
+              <img src="images/product3.JPG" alt="">
+           </div>
+           <div class="content">
+              <h3>title goes here</h3>
+              <h4>price</h4>
+              <a href="" class="btn">Buy Now</a>
+              
+           </div>
         </div>
-    
+
+        <div class="box">
+           <div class="image">
+              <img src="images/product4.JPG" alt="">
+           </div>
+           <div class="content">
+              <h3>title goes here</h3>
+              <h4>price</h4>
+              <a href="" class="btn">Buy Now</a>
+              
+           </div>
+        </div>
+        </div>
+
+        <div id="load-more">Load More <i class="fa-solid fa-arrows-rotate"></i></div>
+            
     </div>
+      
+
 
         <!-------------------------------------- banner part ------------------------->
 
@@ -176,7 +250,7 @@
       <!-------------------------------------- Featured Products ------------------------->
      
     
-      <div class="featured-items">
+      <!-- <div class="featured-items">
          
         <div class="featured-top">
             <h2 class="featured-h2">Featured Products <br> <p class="featured-p">Lorem ipsum dolor sit amet.</p></h2>
@@ -224,6 +298,95 @@
     
 
       </div>
+ -->
+     
+      <section class="product">
+         <h2 class="product-category">Featured Products</h2>
+          <button class="pre-btn"><img src="images/left-arrow-svgrepo-com.svg" alt=""></button>
+          <button class="nxt-btn"><img src="images/right-arrow-svgrepo-com.svg" alt=""></button>
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                         <img src="images/featured-1.JPG" class="product-thumb" alt="">
+
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-brand">Name</h3>
+                        <p class="product-short-desc">Short line</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                         <img src="images/featured-2.JPG" class="product-thumb" alt="">
+
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-brand">Name</h3>
+                        <p class="product-short-desc">Short line</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                         <img src="images/featured-3.JPG" class="product-thumb" alt="">
+
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-brand">Name</h3>
+                        <p class="product-short-desc">Short line</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                         <img src="images/featured-4.JPG" class="product-thumb" alt="">
+
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-brand">Name</h3>
+                        <p class="product-short-desc">Short line</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                         <img src="images/featured-1.JPG" class="product-thumb" alt="">
+
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-brand">Name</h3>
+                        <p class="product-short-desc">Short line</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                         <img src="images/featured-2.JPG" class="product-thumb" alt="">
+
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-brand">Name</h3>
+                        <p class="product-short-desc">Short line</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                         <img src="images/featured-3.JPG" class="product-thumb" alt="">
+
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-brand">Name</h3>
+                        <p class="product-short-desc">Short line</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                         <img src="images/featured-4.JPG" class="product-thumb" alt="">
+
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-brand">Name</h3>
+                        <p class="product-short-desc">Short line</p>
+                    </div>
+                </div>
+            </div>
+      </section>
 
       <!------------------------------------ Up footer ------------------------------->
 
@@ -357,6 +520,11 @@
         </div>
           
       </footer>
-    
+
+      <script src="js/carousel.js"></script>
+      <script src="js/popular.js"></script>
+      <script src="js/script.js"></script>
+      
+      
 </body>
 </html>

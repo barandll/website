@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    
     
 </head>
 <body>
@@ -90,11 +90,50 @@
                 <li>EN</li>
                 <li>$ US</li>
                 <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+                <li><button id="login-btnn" ><i class="fa-regular fa-user"></i></button></li>
                 <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
                 <li><a href=""><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
             </ul>
         </nav>
+    </header>
+   
+     <!---------------------------------------------------------------- a ------------------------------------------------------------------>
+       <div class="popup-overlay"> 
+        <div class="form-box">
+            <h1>Sign in</h1>
+            <h3>Email</h3>
+            <div class="input-box">
+                <input type="email">
+            </div>
+    
+            <div class="pass">
+                <h3>Password</h3>
+                <h4>Forget Password</h4>
+            </div>
+    
+            <div class="input-box">
+                <input type="password" id="myInput">
+    
+                <span class="eye" onclick=" myFunction()">
+                <i id="hide2" class="fa-solid fa-eye-slash" style="color: black;"></i>
+                <i id="hide1" class="fa-solid fa-eye" style="color: black;"></i>
+                </span>
+                
+            </div>
+    
+            <div class="login">
+                <div class="login-btn">
+                    <button class="lgn">Login</button>
+                    <br>
+                    <br>
+                    <a href="">I don't have an account</a>
+                </div>
+            </div>
+        </div>
+       </div>
+
+       
+
 
        <!--  <h2 class="header-title-1">Control and manage any <br>device with cloud solution</h2>
         <p>Improve business performance and the user experience<br> with the right mix of loT technology and processes</p>
@@ -127,7 +166,8 @@
                 <button class="carousel__indicator"></button>
             </div>
         </div>
-        
+      
+    
     <!-------------------------------------- popular ıtems part ------------------------->
 
        
@@ -461,6 +501,8 @@
                  <li><a href="mailto: contact@osf-global.com" class="c1">contact@osf-global.com</a></li>
                  
                  <li><a href="tel:+1(888)548-4344" class="c1">+1(888)548-4344 </a></li>
+
+                 <li>©<span id="year"></span>Copyrights All Rights Reserved</li>
                     
                 </ul>
             </div>
@@ -524,7 +566,11 @@
       <script src="js/carousel.js"></script>
       <script src="js/popular.js"></script>
       <script src="js/script.js"></script>
-      
+      <script src="js/login.js"></script>
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
+     
       
 </body>
 </html>

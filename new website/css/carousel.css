@@ -15,6 +15,60 @@
 
 }
 
+.carousel-abt-1{
+    position: absolute;
+    top: 55px;
+    text-align: left;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.carousel-abt-2{
+    position: absolute;
+    top: 55px;
+    left: 30%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.carousel-abt-3{
+    position: absolute;
+    top: 55px;
+    left: 60%;
+    text-align: right;
+    justify-content:right;
+    margin-left: 30px;
+}
+
+
+.carousel-abt-1 h2,
+.carousel-abt-2 h2,
+.carousel-abt-3 h2{
+    margin-top: 100px;
+
+}
+
+.carousel-abt-1 p,
+.carousel-abt-2 p,
+.carousel-abt-3 p{
+    margin: 40px 0;
+
+}
+
+.carousel-abt-1 a,
+.carousel-abt-2 a,
+.carousel-abt-3 a{
+
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;  
+    
+}
+
+
 .carousel__track-container{
     /* background: lightgreen; */
     overflow: hidden;

@@ -110,7 +110,7 @@ nav{
 
     text-decoration: none;
     color: #45413e;
-    margin-left: 14.5px;
+    margin-left: 10px;
 
 }
 
@@ -531,6 +531,7 @@ color: #92C63E;
     border: solid gray 2px;
     background-color: gray;
     padding: 0px 5px;
+    z-index: 1;
     
     
 
@@ -547,6 +548,7 @@ color: #92C63E;
     border: solid gray 2px;
     background-color: gray;
     padding: 0px 5px;
+    z-index: 1;
 }
 
 
@@ -639,6 +641,9 @@ footer{
     display: flex;
 }
 
+h3.Con{
+    margin-left: 0;
+}
 
 
 

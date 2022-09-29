@@ -1,0 +1,31 @@
+.bot-nav-menu{
+    display: flex;
+    width: 450px;
+    background-color: #011418;
+    justify-content: center;
+    
+}
+
+.bot-nav-menu li{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.bot-nav-menu li button{
+    color: gray;
+}
+
+.bot-nav-menu li a{
+    color: gray;
+    text-decoration: none;
+}
+
+@media(min-width:450px){
+    .bot-nav-menu{
+        display: none;
+    }
+    
+}

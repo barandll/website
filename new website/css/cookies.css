@@ -8,7 +8,7 @@ body{
     font-family: sans-serif;
 }
 
-.container{
+.contain{
     width: 1600px;
     margin: auto;
     background-color: white;
@@ -58,14 +58,14 @@ body{
     color: #92C63E;
 }
 
-.container a{
+.contain a{
     color:#92C63E;
     font-weight: 500;
     text-decoration: none;
 }
 
 #cookies-btn{
-    display: relative;
+    display: flex;
     border-radius: 5px;
     padding: 8px 12px 8px 12px;
     font-size: 1rem;
@@ -75,17 +75,32 @@ body{
     border: 3px solid white;
     background-color: #92C63E;
     color: white;
+    
 
 }
 
 @media(max-width: 1600px){
-    .container{
+    .contain{
         width: 100%;
     }
 }
 
 @media(max-width: 1024px){
-    .container{
+    .contain{
         padding: 10px 0;
     }
+}
+
+@media(max-width:450px){
+
+    #cookies{
+        left: 20px;
+        
+     }
+
+    .contain{
+        display: none;
+    }
+     
+    
 }

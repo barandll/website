@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 .container-row{
     height: 300px;
 }
@@ -52,4 +53,33 @@ a{
     margin-top: 10px;
     color: #92C63E;
 
+}
+
+.textbox{
+    width: 200px;
+
+}
+
+@media(max-width:450px){
+    .container-row{
+        display: block;
+    }
+
+    .container-col-1{
+        width: 100%;
+    }
+
+    .container-col-2{
+        width: 100%;
+
+    }
+
+    .oops{
+        margin-bottom: 180px;
+    }
+
+    .container-col-1 p{
+        left: 18%;
+        margin-bottom: 40px;
+    }
 }

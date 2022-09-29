@@ -5,7 +5,6 @@
 }
 
 header{
-    /* background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)) ,url("../images/shopping\ bags.jpg"); */
     height: 150px;
     background-size: cover;
     text-align: left;
@@ -79,6 +78,40 @@ p{
 
 }
 
+#heart-btnn{
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+#cart-btnn{
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon-button__badge{
+   position: absolute;
+   top: -10px;
+   right: -10px;
+   color: #92C63E;
+   border: 2px solid #92C63E;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+   font-size: 15px;
+
+}
+
+#card-btnn:focus{
+    border: none;
+    outline: none;
+}
+
 #login-btnn:focus{
     border: none;
     outline: none;
@@ -112,6 +145,16 @@ nav{
     color: #45413e;
     margin-left: 10px;
 
+}
+
+@media(max-width:450px){
+  
+   header{
+    display: none;
+   }
+
+   
+    
 }
 
 /*************************************dropdown*********************************************************/
@@ -197,7 +240,12 @@ nav{
     margin: 0 auto;
     text-align: center;
     padding: 25px 20px; 
+    position: relative;
 
+}
+
+a{
+    text-decoration: none;
 }
 
 .container .heading{
@@ -210,14 +258,64 @@ nav{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px ,1fr));
     gap: 20px;
+   
 }
 
 .container .box-container .box{
     background-color: white;
-    padding: 20px;
+    padding: 5px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     display: none;
+}
+
+.container .box-container .box .icons{
+    width: 346px;
+    height: 320px;
+    background-color: rgba(146, 190, 62, 0.6);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    /* display: none; */
+    
+    
+}
+
+.container .box-container .box .icons:hover{
+    width: 346px;
+    height: 320px;
+    background-color: rgba(146, 190, 62, 0.6);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    
+    
+}
+
+/* .container .box-container .box:hover + .container .box-container .box .icons{
+    display: block;
+    z-index: 100;
+
+    
+} */
+
+.container .box-container .box .icons button{
+
+    width: 60px;
+    height: 60px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 120px 20px;
+}
+
+.container .box-container .box .icons button i{
+
+    font-size: 20px;
+    
+    
 }
 
 .container .box-container .box:nth-child(1),
@@ -227,11 +325,13 @@ nav{
     display: inline-block;
 }
 
+
 .container .box-container .box .image{
     margin-bottom: 20px;
     overflow: hidden;
     height: 200px;
     border-radius: 5px;
+    
 
 }
 
@@ -240,13 +340,15 @@ nav{
    width: 100%;
 }
 
-.container .box-container .box:hover .image img{
-    transform: scale(1.1);
-
- }
 
  .container .box-container .box .content h3{
     font-size: 20px;
+    color: #334;
+
+ }
+
+ .container .box-container .box .content h3 a{
+    text-decoration: none;
     color: #334;
 
  }
@@ -311,6 +413,17 @@ nav{
     .container .box-container .box .content .h4{
         font-size: 12px;
     }
+
+    .container .box-container .box:nth-child(2),
+    .container .box-container .box:nth-child(3),
+    .container .box-container .box:nth-child(4){
+    display: none;
+    }
+
+    .container .box-container .box .icons{
+        width: 400px;
+    }
+
  }
  
 
@@ -353,102 +466,19 @@ nav{
    
 }
 
+@media (max-width:450px){
+    .banner{
+        height: 400px;
+    }
+
+    .banner h2{     
+        padding-top: 30px;
+    
+    }
+}
+
 /*******************************Featured Products****************************************/
 
-/* .featured-items{
-    background-color:#011418;
-    padding-top: 40px;
-    padding-bottom: 100px;
-
-}
-
-.featured-top{
-    position: flex;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.scroll .nav p{
-    font-size: 30px;
-}
-
-.scroll .nav a{
-    border: solid gray 2px;
-    background-color: gray;
-    padding: 0px 5px;
-    color: white;
-    text-decoration: none;
-}
-
-.featured-row{
-    display: flex;
-    justify-content: center;
-
-}
-
-.featured-col{
-    width: 350px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.featured-image-1,
-.featured-image-2,
-.featured-image-3,
-.featured-image-4{
-    width: 100%;
-    height: 197px;
-    background-repeat: no-repeat ;
-    position: relative;
-    
-}
-
-.featured-image-1{
-    background-image: url(../images/featured-1.JPG);
-    background-size: cover;
-    
-}
-.featured-image-2{
-    background-image: url(../images/featured-2.JPG);
-    background-size: cover;
-    
-}
-.featured-image-3{
-    background-image: url(../images/featured-3.JPG);
-    background-size: cover;
-    
-}
-.featured-image-4{
-    background-image: url(../images/featured-4.JPG);
-    background-size: cover;
-    
-}
-
-.featured-h2{
-
-    font-size: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 50px;
-
-}
-
-.featured-p{
-    text-align: center;
-    margin: 0;
-    font-size: 10px;
-    padding-top: 10px;
-}
-
-.featured-h3{
-
-    background: white;
-    padding: 10px ;
-    font-size: 15px;
-    font-family: 'Open Sans';
-    text-align: center;
-
-} */
 
 .product{
     position: relative;
@@ -552,6 +582,21 @@ color: #92C63E;
 }
 
 
+@media (max-width:450px){
+
+    .nxt-btn{
+        right: 60px;
+    }
+
+    .pre-btn{
+        left: 60px;
+    }
+
+
+}
+
+
+
 
 
 /* ***************************************Up footer *********************************************/
@@ -621,6 +666,38 @@ color: #92C63E;
     color: #92C63E;
 }
 
+
+@media (max-width:450px){
+     
+    .upper-footer{
+        height: 550px;
+    }
+
+
+    .upper-row{
+        display: block;
+    }
+
+    .upper-col{
+        display: block;
+    }
+
+    .up-1 i,
+    .up-2 i,
+    .up-3 i{
+        font-size: 50px;
+    }
+
+    .up-h-1,
+    .up-h-2,
+    .up-h-3{
+       font-size: 20px;
+    
+    }
+
+}   
+
+
 /******************************************************** footer ***************************************************************/
 
 footer{
@@ -672,6 +749,12 @@ h3.Abt{
     padding: 0px 70px;
     font-family: 'Open Sans';
     display: flex;
+}
+
+.footer-col-h{
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 250px;
 }
 
 .footer-title{
@@ -737,4 +820,10 @@ ul li i{
     margin: 0px 10px;
 }
 
+@media (max-width:450px){
+     footer{
+        display: none;
+     }
+
+}   
 

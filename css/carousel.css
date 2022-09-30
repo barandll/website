@@ -1,0 +1,161 @@
+.carousel{
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+    
+}
+
+.carousel__images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.carousel-abt-1{
+    position: absolute;
+    top: 55px;
+    text-align: left;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.carousel-abt-2{
+    position: absolute;
+    top: 55px;
+    left: 30%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.carousel-abt-3{
+    position: absolute;
+    top: 55px;
+    left: 60%;
+    text-align: right;
+    justify-content:right;
+    margin-left: 30px;
+}
+
+
+.carousel-abt-1 h2,
+.carousel-abt-2 h2,
+.carousel-abt-3 h2{
+    margin-top: 100px;
+
+}
+
+.carousel-abt-1 p,
+.carousel-abt-2 p,
+.carousel-abt-3 p{
+    margin: 40px 0;
+
+}
+
+.carousel-abt-1 a,
+.carousel-abt-2 a,
+.carousel-abt-3 a{
+
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;  
+    padding: 10px;
+    
+}
+
+
+.carousel__track-container{
+    /* background: lightgreen; */
+    overflow: hidden;
+    height: 95%;
+    position: relative;
+}
+
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 400ms ease-in;
+}
+
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button--left{
+    left: -35px;
+}
+
+.carousel__button--right{
+    right: -35px;
+}
+
+.carousel__button img{
+
+    width: 30px;
+
+}
+
+.carousel__nav{
+   /*  background: pink; */
+    display: flex;
+    justify-content: center;
+    
+}
+
+.carousel__indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0,0.3);
+    padding: 10px 0;
+    margin: 0 12px;
+    cursor: pointer;
+
+}
+
+.carousel__indicator.current-slide{
+    background: rgba(0, 0, 0, .7);
+}
+
+.is-hidden{
+    display: none;
+}
+
+
+@media screen and (max-width:450px){
+
+    .carousel-abt-1,
+    .carousel-abt-2,
+    .carousel-abt-3{
+      position: absolute;
+      top: 55px;
+      left: 3%;
+      text-align: center;
+      justify-content: center;
+      margin-left: 0px;
+       
+  }
+
+}
